@@ -1,7 +1,7 @@
-From c8ee2698833eac1d3ce63c5adf9caf4e6a6ff784 Mon Sep 17 00:00:00 2001
+From 8358143ca0056dc8a47f9a1fd679d54c9b2cdb65 Mon Sep 17 00:00:00 2001
 From: Sarthak Roy <sarthakroy2002@gmail.com>
 Date: Mon, 17 Jun 2024 22:03:29 +0530
-Subject: [PATCH 4/6] ImsService: Fix ImsKeeperReceiver receiver
+Subject: [PATCH 4/8] ImsService: Fix ImsKeeperReceiver receiver
 
 Signed-off-by: Sarthak Roy <sarthakroy2002@gmail.com>
 Change-Id: I3734111308d255513107c90a80129f956311266d
@@ -10,18 +10,18 @@ Change-Id: I3734111308d255513107c90a80129f956311266d
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/AndroidManifest.xml b/AndroidManifest.xml
-index bfdf930..7f7b591 100644
+index 94a6a18..b5e3651 100644
 --- a/AndroidManifest.xml
 +++ b/AndroidManifest.xml
-@@ -72,7 +72,7 @@
+@@ -73,7 +73,7 @@
                  <action android:name="android.telephony.ims.ImsService"/>
              </intent-filter>
          </service>
--        <receiver android:exported="false" android:name="com.mediatek.ims.ImsKeeperReceiver" androidprv:textAppearanceAutoCorrectionSuggestion="true">
+-        <receiver android:exported="false" android:name="com.mediatek.ims.ImsKeeperReceiver" androidprv:trackDrawable="true">
 +        <receiver android:exported="false" android:name="com.mediatek.ims.ImsKeeperReceiver">
              <intent-filter>
                  <action android:name="android.telephony.action.CARRIER_CONFIG_CHANGED"/>
              </intent-filter>
 -- 
-2.45.2
+2.52.0
 
