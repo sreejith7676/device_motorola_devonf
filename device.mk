@@ -312,7 +312,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayDevonf \
     FrameworksResOverlayDevonf \
-    SettingsLibOverlayDevonf \
     SettingsOverlayDevonf \
     SettingsProviderOverlayDevonf \
     SystemUIOverlayDevonf \
