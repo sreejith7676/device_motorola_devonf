@@ -318,7 +318,6 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayDevonf \
     FrameworksResOverlayDevonf \
     PowerOffAlarmOverlayDevonf \
-    SettingsLibOverlayDevonf \
     SettingsOverlayDevonf \
     SettingsProviderOverlayDevonf \
     SystemUIOverlayDevonf \
