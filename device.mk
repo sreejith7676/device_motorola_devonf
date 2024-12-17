@@ -220,7 +220,7 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
-
+      
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/idc/,$(TARGET_COPY_OUT_VENDOR)/usr/idc) \
@@ -412,13 +412,9 @@ PRODUCT_PACKAGES += \
     init.mtkgki.rc \
     init.oem.hw.sh \
     init.project.rc \
+    init.recovery.mt6855.rc \
     init.sensor_2_0.rc \
     ueventd.mt6855.rc
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/fstab.mt6855:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6855 \
-    $(LOCAL_PATH)/init/init.recovery.mt6855.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6855.rc \
-    $(LOCAL_PATH)/init/init.recovery.mt6855.rc:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/init.recovery.mt6855.rc
 
 # Sensors
 PRODUCT_PACKAGES += \
