@@ -445,9 +445,6 @@ PRODUCT_PACKAGES += \
     libpower.vendor \
     libsensorndkbridge
 
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/sensors/,$(TARGET_COPY_OUT_VENDOR)/etc/sensors)
-
 # Set support hide display cutout feature
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_hide_display_cutout=true
