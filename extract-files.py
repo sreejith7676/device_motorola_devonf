@@ -18,7 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/motorola/cancunf',
+    'device/motorola/devonf',
     'hardware/mediatek',
     'hardware/mediatek/libmtkperf_client',
 ]
@@ -88,7 +88,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'cancunf',
+    'devonf',
     'motorola',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
