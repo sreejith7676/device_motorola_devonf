@@ -21,37 +21,7 @@ vendor/etc/ap_gain.bin
 vendor/etc/ap_gain_mmul.bin
 vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_rv.xml
--vendor/lib/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib/hw/audio.primary.mt6855.so
--vendor/lib/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib/hw/audio.r_submix.mt6855.so
--vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
--vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so
--vendor/lib/libMtkSpeechEnh.so
--vendor/lib/libMtkSpeechEnh_swb.so
--vendor/lib/lib_iir.so
--vendor/lib/libaudio_param_parser-vnd.so
--vendor/lib/libaudiocompensationfilter_vendor.so
--vendor/lib/libaudiocompensationfilterc.so
--vendor/lib/libaudiocomponentengine_vendor.so
--vendor/lib/libaudiocomponentenginec.so
--vendor/lib/libaudiocustparam_vendor.so
--vendor/lib/libaudiodcrflt_vendor.so
--vendor/lib/libaudiofmtconv.so
--vendor/lib/libaudioloudc.so
--vendor/lib/libaudioprimarydevicehalifclient.so
--vendor/lib/libaudiosmartpamtk.so
--vendor/lib/libaudiotoolkit_vendor.so
--vendor/lib/libaurisysdemo.so
--vendor/lib/libawinic_mtk_aurisys.so
--vendor/lib/libbessound_hd_mtk_vendor.so
--vendor/lib/libblisrc32_vendor.so
 -vendor/lib/libbwc.so
--vendor/lib/libcvsd_mtk.so
--vendor/lib/libmsbc_mtk.so
--vendor/lib/librt_extamp_intf.so
--vendor/lib/libspeech_enh_lib.so
--vendor/lib/libspeechparser_vendor.so
--vendor/lib/vendor.mediatek.hardware.audio@6.1.so
--vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 -vendor/lib64/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib64/hw/audio.primary.mt6855.so
 -vendor/lib64/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib64/hw/audio.r_submix.mt6855.so
 -vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
@@ -217,18 +187,6 @@ vendor/etc/SwadParamList.txt
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
 vendor/etc/bt_stack_debug.conf
 vendor/etc/bt_stack_level6.conf
--vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
--vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
--vendor/lib/libbluetooth_audio_session_mediatek.so
--vendor/lib/libbluetooth_hw_test.so
--vendor/lib/libbluetooth_mtk.so
--vendor/lib/libbluetooth_mtk_pure.so
--vendor/lib/libbluetooth_relayer.so
--vendor/lib/libbluetoothem_mtk.so
--vendor/lib/libbt-vendor.so
--vendor/lib/libtpa.so
--vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
--vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 -vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 -vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
 -vendor/lib64/libbluetooth_audio_session_mediatek.so
@@ -1207,12 +1165,6 @@ vendor/etc/cust_color.xml
 -vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
--vendor/lib/mediadrm/libmockdrmcryptoplugin.so
--vendor/lib/mediadrm/libwvdrmengine.so
--vendor/lib/liboemcrypto.so
--vendor/lib/libtlcWidevineModularDrm.so
--vendor/lib/liburee_meta_drmkeyinstall.so
--vendor/lib/libwvhidl.so
 -vendor/lib64/mediadrm/libmockdrmcryptoplugin.so
 -vendor/lib64/mediadrm/libwvdrmengine.so
 -vendor/lib64/liboemcrypto.so
@@ -1231,12 +1183,6 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc
 vendor/etc/init/init.chipone_ident.rc
 -vendor/etc/vintf/manifest/manifest_IMoto_Fingerprint.xml
 -vendor/framework/com.fingerprints.extension.jar
--vendor/lib/hw/fpsensor_fingerprint.default.so
--vendor/lib/com.fingerprints.extension@1.0.so
--vendor/lib/com.motorola.hardware.biometric.fingerprint@1.0.so
--vendor/lib/libfp_ext_svc2.so
--vendor/lib/libfpc.sensortest.hal.so
--vendor/lib/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so
 -vendor/lib64/hw/fpsensor_fingerprint.default.so
 -vendor/lib64/com.fingerprints.extension@1.0.so
 -vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so
@@ -1330,9 +1276,6 @@ vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mtk-de
 vendor/etc/vintf/manifest/gnss@2.1-service.xml:vendor/etc/vintf/manifest/gnss-mtk@2.1-service.xml
 vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
 vendor/etc/slp_conf
--vendor/lib/hw/gps.default.so
--vendor/lib/librpc.so
--vendor/lib/libviagpsrpc.so
 -vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
 -vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 -vendor/lib64/hw/gps.default.so
@@ -1340,8 +1283,6 @@ vendor/etc/slp_conf
 -vendor/lib64/libviagpsrpc.so
 
 # Gatekeeper
--vendor/lib/hw/libMcGatekeeper.so;SYMLINK=vendor/lib/hw/gatekeeper.trustonic.so
--vendor/lib/hw/libSoftGatekeeper.so;SYMLINK=vendor/lib/hw/gatekeeper.default.so
 -vendor/lib64/hw/libMcGatekeeper.so;SYMLINK=vendor/lib64/hw/gatekeeper.trustonic.so
 -vendor/lib64/hw/libSoftGatekeeper.so;SYMLINK=vendor/lib64/hw/gatekeeper.default.so
 
@@ -1410,7 +1351,6 @@ vendor/lib64/libgralloctypes_mtk.so
 -vendor/bin/batt_health
 -vendor/bin/fuelgauged
 vendor/etc/init/fuelgauged_init.rc
--vendor/lib/libfgauge_gm30.so
 -vendor/lib64/libfgauge_gm30.so
 
 # IMS (System)
@@ -1476,12 +1416,6 @@ vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
 -vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml:vendor/etc/vintf/manifest/manifest_android.hardware.security.keymint-service.trustonic.xml
 -vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml:vendor/etc/vintf/manifest/manifest_android.hardware.security.secureclock-service.trustonic.xml
 -vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml:vendor/etc/vintf/manifest/manifest_android.hardware.security.sharedsecret-service.trustonic.xml
--vendor/lib/hw/kmsetkey.trustonic.so;SYMLINK=vendor/lib/hw/kmsetkey.default.so
--vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
--vendor/lib/libdecrypt.so
--vendor/lib/libthha.so
--vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so
--vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 -vendor/lib64/hw/kmsetkey.trustonic.so;SYMLINK=vendor/lib64/hw/kmsetkey.default.so
 -vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 -vendor/lib64/libdecrypt.so
@@ -1622,7 +1556,6 @@ vendor/etc/mtk_platform_codecs_config.xml
 -vendor/bin/hw/android.hardware.memtrack-service.mediatek
 vendor/etc/init/memtrack-mediatek.rc
 -vendor/etc/vintf/manifest/memtrack-mediatek.xml
--vendor/lib/mt6855/libmemtrack_GL.so;SYMLINK=vendor/lib/libmemtrack_GL.so
 -vendor/lib64/mt6855/libmemtrack_GL.so;SYMLINK=vendor/lib64/libmemtrack_GL.so
 
 # Misc
@@ -1793,11 +1726,6 @@ vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nxp_557.conf
 vendor/etc/sn100u_nfcon.pnscr
 vendor/etc/sn100u_pnx_ese_cplc.pnscr
--vendor/lib/ese_client.so
--vendor/lib/libpn557_fw.so
--vendor/lib/libpn560_fw.so
--vendor/lib/libsn100u_fw.so
--vendor/lib/libsn220u_fw.so
 -vendor/lib64/ese_client.so
 -vendor/lib64/libpn557_fw.so
 -vendor/lib64/libpn560_fw.so
@@ -1969,7 +1897,6 @@ vendor/etc/virtual-spn-conf-by-imsi.xml
 
 # Sensors
 vendor/etc/permissions/unavail.android.hardware.sensor.barometer.xml
--vendor/lib/libhwm.so
 -vendor/lib/sensors.moto.so
 -vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6855.so
 -vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
@@ -1996,8 +1923,6 @@ vendor/etc/thermal/thermal_policy_08.conf
 vendor/etc/thermal/thermal_policy_10.conf
 vendor/etc/fstb.cfg
 vendor/etc/mpe.conf
--vendor/lib/hw/android.hardware.thermal@2.0-impl.so
--vendor/lib/hw/thermal_hal.so
 -vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 -vendor/lib64/hw/thermal_hal.so
 
@@ -2037,12 +1962,6 @@ vendor/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin
 vendor/etc/init/tee.rc
 vendor/etc/init/trustonic.rc
 vendor/etc/init/vendor.trustonic.tee@1.1-service.rc
--vendor/lib/libMcClient.so
--vendor/lib/libMcRegistry.so
--vendor/lib/libTBaseProvisioning.so
--vendor/lib/libTEECommon.so
--vendor/lib/libgz_gp_client.so
--vendor/lib/libgz_uree.so
 -vendor/lib64/libMcClient.so
 -vendor/lib64/libTEECommon.so
 -vendor/lib64/libgz_gp_client.so
