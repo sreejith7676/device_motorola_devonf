@@ -82,7 +82,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     BesLoudness \
-    DolbyManager \
     MtkInCallService
 
 PRODUCT_COPY_FILES += \
@@ -269,7 +268,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_c2_shim1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_shim1.xml \
-    $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_performance_c2_shim1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2_shim1.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_shim1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_shim1.xml \
