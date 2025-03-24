@@ -300,8 +300,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     libchrome.vendor \
-    NfcNci \
-    SecureElement \
     Tag
 
 PRODUCT_PACKAGES += \
@@ -389,7 +387,6 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     libmtkperf_client_vendor \
     libmtkperf_client \
-    libpowerhalwrap_vendor \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
