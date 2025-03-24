@@ -1609,12 +1609,6 @@ vendor/bin/vendor.mmi.cxp.sh
 vendor/etc/init/hw/init.mmi.backup.trustlet.rc
 vendor/etc/init/vendor.mmi.carrier.rc
 vendor/etc/init/vendor.mmi.cxp.rc
-vendor/etc/motorola/12m/Factory_SW_Logo.jpg
-vendor/etc/motorola/12m/cqatest_config.xml
-vendor/etc/motorola/12m/key_code_map.txt
-vendor/etc/motorola/12m/runin_config.xml
-vendor/etc/motorola/12m/runin_disable_charging.sh
-vendor/etc/motorola/12m/runin_enable_charging.sh
 vendor/etc/motorola/sensors/mot_sensor_settings.json
 
 # Native public libraries
@@ -1753,7 +1747,6 @@ vendor/bin/bip_ap
 vendor/bin/ccci_fsd
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
-vendor/bin/factory
 vendor/bin/gsm0710muxd
 vendor/bin/ipsec_mon
 vendor/bin/muxreport
