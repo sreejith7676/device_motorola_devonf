@@ -75,6 +75,10 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('1.1', '1.2')
         .regex_replace('@1.0', '@1.2')
         .regex_replace('default9', 'default'),
+    ('vendor/lib/mt6855/libneuralnetworks_sl_driver_mtk_prebuilt.so', 'vendor/lib64/mt6855/libneuralnetworks_sl_driver_mtk_prebuilt.so', 
+     'vendor/lib64/libstfactory-vendor.so', 'vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so', 
+     'vendor/lib/libsysenv.so', 'vendor/lib64/libsysenv.so', 'vendor/lib/libtflite_mtk.so', 'vendor/lib64/libtflite_mtk.so'): blob_fixup()
+        .add_needed('libbase_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
