@@ -381,7 +381,7 @@ TARGET_BOARD_PLATFORM := mt6855
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.lineage-libperfmgr
+    android.hardware.power-service.pixel-libperfmgr
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
@@ -458,7 +458,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
-    hardware/lineage/interfaces/power-libperfmgr \
     $(LOCAL_PATH)
 
 # Thermal
