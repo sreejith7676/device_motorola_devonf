@@ -403,7 +403,6 @@ PRODUCT_PACKAGES += \
     fstab.mt6855.vendor_ramdisk \
     init_connectivity.rc \
     init.connectivity.common.rc \
-    init.mmi.chipset.rc \
     init.mmi.overlay.rc \
     init.mmi.rc \
     init.modem.rc \
