@@ -41,13 +41,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.mmi.chipset.rc",
-    src: "etc/init.mmi.chipset.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.mmi.overlay.rc",
     src: "etc/init.mmi.overlay.rc",
     sub_dir: "init/hw",
