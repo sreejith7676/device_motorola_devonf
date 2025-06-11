@@ -73,7 +73,6 @@ PRODUCT_PACKAGES += \
     audioclient-types-aidl-cpp.vendor \
 
 PRODUCT_PACKAGES += \
-    BesLoudness \
     DolbyManager \
     MtkInCallService
 
@@ -253,7 +252,6 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    BesLoudnessOverlayDevonf \
     CarrierConfigOverlayDevonf \
     FrameworksResOverlayDevonf \
     OpenDeltaOverlayDevonf \
