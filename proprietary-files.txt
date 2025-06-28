@@ -1,4 +1,4 @@
-# Device proprietary files - From devonf_g_sys-user 14 U1TNS34M.82-12-7-4 00d08 release-keys, unless pinned
+# Device proprietary files - From devonf_g_sys-user 14 U1TNS34M.82-12-7-9 4db9ca release-keys, unless pinned
 
 # AEE
 vendor/lib/libaedv.so
@@ -1221,6 +1221,9 @@ vendor/firmware/wifi.cfg
 vendor/firmware/NT36xxx_MP_Setting_Criteria_6057.csv:recovery/root/vendor/firmware/NT36xxx_MP_Setting_Criteria_6057.csv
 vendor/firmware/novatek_ts_fw.bin:recovery/root/vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin:recovery/root/vendor/firmware/novatek_ts_mp.bin
+
+# FM Radio - from Xiaomi beryl UP1A.231005.007 V816.0.3.0.UOQCNXM
+lib64/libfmjni.so:system/lib64/libfmjni.so|01f7b9929d8b81253ad88b28244ca43de6e6e281
 
 # GPS
 vendor/bin/hw/android.hardware.gnss-service.mediatek
