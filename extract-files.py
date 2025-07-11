@@ -85,6 +85,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()
          .patchelf_version('0_17_2')
          .add_needed('libprocessgroup_shim.so'),
+    'vendor/bin/hw/mtkfusionrild': blob_fixup()
+         .add_needed('libutils-v32.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
