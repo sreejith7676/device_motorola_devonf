@@ -125,7 +125,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey
+    com.android.hardware.drm.clearkey
 
 # DSP Volume Synchronizer
 PRODUCT_PACKAGES += \
