@@ -1512,7 +1512,6 @@ vendor/lib64/libjpeg-alpha_vendor.so
 vendor/lib64/libstagefrighthw.so
 vendor/lib64/libvcodec_oal.so;DISABLE_CHECKELF
 vendor/lib64/libvcodecdrv_header_stub.so
-vendor/lib64/libvpu.so
 
 # MediaTek Vision Processing Unit (System)
 system_ext/lib/libmvpu_cic_ci_compiler.mtk.so
@@ -1696,7 +1695,6 @@ system_ext/lib/vendor.mediatek.hardware.apuware.hmp@1.0.so
 system_ext/lib/vendor.mediatek.hardware.apuware.utils-V1-ndk.so
 system_ext/lib/vendor.mediatek.hardware.apuware.utils@1.0.so
 system_ext/lib/vendor.mediatek.hardware.apuware.utils@2.0.so
-system_ext/lib/vendor.mediatek.hardware.apuware.xrp-V1-ndk.so
 system_ext/lib/vendor.mediatek.hardware.apuware.xrp@1.0.so
 system_ext/lib/vendor.mediatek.hardware.apuware.xrp@2.0.so
 system_ext/lib64/libapuwareapusys.mtk.so
@@ -2030,4 +2028,4 @@ vendor/lib64/libwifitest.so
 vendor/lib64/meta_wifi_data.so
 
 # XML DOM parser
-system/lib64/libtinyxml2.so:vendor/lib64/libtinyxml2-bp2a.so;FIX_SONAME|ea944fbd0e80c287581ee5e8376be4b07628dfc6|29e7a1b448c4e029bd5b70fb83e9b0e58e41f933
+system/lib64/libtinyxml2.so:vendor/lib64/libtinyxml2-legacy.so;FIX_SONAME|ea944fbd0e80c287581ee5e8376be4b07628dfc6|8e92250b13e2f9687b3c7cf381fa55dd5467d228
