@@ -80,7 +80,6 @@ PRODUCT_PACKAGES += \
     libtinycompress
 
 PRODUCT_PACKAGES += \
-    BesLoudness \
     MtkInCallService
 
 PRODUCT_COPY_FILES += \
@@ -314,10 +313,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    BesLoudnessOverlayDevonf \
     CarrierConfigOverlayDevonf \
     FrameworksResOverlayDevonf \
-    PowerOffAlarmOverlayDevonf \
     SettingsLibOverlayDevonf \
     SettingsOverlayDevonf \
     SettingsProviderOverlayDevonf \
@@ -391,10 +388,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
-# Power Off Alarm
-PRODUCT_PACKAGES += \
-    PowerOffAlarm
 
 # Protobuf
 PRODUCT_PACKAGES += \

@@ -12,16 +12,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/devonf/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := lineage_devonf
+PRODUCT_NAME := infinity_devonf
 PRODUCT_DEVICE := devonf
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g73 5G 
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
+INFINITY_MAINTAINER := "Sreejith\u00A0S"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=devonf_g_sys \
