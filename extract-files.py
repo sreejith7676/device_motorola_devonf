@@ -76,15 +76,12 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('1.1', '1.2')
         .regex_replace('@1.0', '@1.2')
         .regex_replace('default9', 'default'),
+    ('vendor/lib64/mt6855/libcam.hal3a.v3.so', 'vendor/lib64/hw/hwcomposer.mtk_common.so'): blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
     ('vendor/lib/mt6855/libneuralnetworks_sl_driver_mtk_prebuilt.so', 'vendor/lib64/mt6855/libneuralnetworks_sl_driver_mtk_prebuilt.so', 
      'vendor/lib64/libstfactory-vendor.so', 'vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so', 
      'vendor/lib/libsysenv.so', 'vendor/lib64/libsysenv.so', 'vendor/lib/libtflite_mtk.so', 'vendor/lib64/libtflite_mtk.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
-    'vendor/lib64/mt6855/libcam.hal3a.v3.so': blob_fixup()
-         .add_needed('libprocessgroup_shim.so'),
-    'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()
-         .patchelf_version('0_17_2')
-         .add_needed('libprocessgroup_shim.so'),
     'vendor/bin/hw/mtkfusionrild': blob_fixup()
         .add_needed('libutils-v32.so'),
     'system_ext/lib64/libimsma.so': blob_fixup()
