@@ -96,7 +96,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio-impl
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth-service.mediatek
 
 # Boot
 PRODUCT_PACKAGES += \
