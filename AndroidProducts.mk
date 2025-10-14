@@ -6,4 +6,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/yaap_devonf.mk
+    $(LOCAL_DIR)/clover_devonf.mk
