@@ -126,7 +126,6 @@ vendor.debug.sf.cpupolicy.min_60=137
 vendor.debug.sf.cpupolicy.min_boost=172
 vendor.debug.sf.cpupolicy.sf_cpu_thres=305
 vendor.debug.sf.display_dejitter=0
-vendor.hw.sf.IdleLazyResetThresholdT=500
 vendor.media.heif.highThreshold=20
 
 # Dolby
