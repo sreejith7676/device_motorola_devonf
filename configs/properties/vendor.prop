@@ -141,7 +141,6 @@ vendor.debug.sf.cpupolicy.upbound_uclamp_max_ll=280
 vendor.debug.sf.cpupolicy.upbound_uclamp_min=400
 vendor.debug.sf.cpupolicy.upbound_uclamp_ret_sys=218
 vendor.debug.sf.cpupolicy.xgf_min=25
-vendor.hw.sf.IdleLazyResetThresholdT=500
 vendor.media.heif.highThreshold=20
 
 # Dolby
