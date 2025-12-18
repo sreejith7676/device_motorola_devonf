@@ -45,9 +45,9 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     'system_ext/priv-app/ImsService/ImsService.apk': blob_fixup()
-        .apktool_patch('ims-patches'),
+        .apktool_patch('patches/ImsService'),
     'system_ext/priv-app/MtkGbaService/MtkGbaService.apk': blob_fixup()
-        .apktool_patch('MtkGba-patches'),
+        .apktool_patch('patches/MtkGbaService'),
     (
         'system_ext/lib/libarmnn_ndk.mtk.so',
         'system_ext/lib64/libarmnn_ndk.mtk.so'
