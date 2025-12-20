@@ -1945,3 +1945,6 @@ vendor/lib/meta_wifi_data.so
 vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 vendor/lib64/libwifitest.so
 vendor/lib64/meta_wifi_data.so
+
+# XML DOM parser
+system/lib64/libtinyxml2.so:vendor/lib64/libtinyxml2-bp2a.so;FIX_SONAME|ea944fbd0e80c287581ee5e8376be4b07628dfc6|29e7a1b448c4e029bd5b70fb83e9b0e58e41f933
