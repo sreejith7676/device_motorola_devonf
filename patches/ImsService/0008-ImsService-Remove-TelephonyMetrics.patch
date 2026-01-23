@@ -1,7 +1,7 @@
-From 5063b40a04fc3d944799bd8dcbb2071eb8f8f955 Mon Sep 17 00:00:00 2001
+From 5c898f227612c56b625dbc75af824b0beb7590c3 Mon Sep 17 00:00:00 2001
 From: Mashopy <eliasgheeraert@gmail.com>
 Date: Fri, 19 Dec 2025 15:11:40 +0530
-Subject: [PATCH 8/8] ImsService: Remove references to TelephonyMetrics
+Subject: [PATCH] ImsService: Remove references to TelephonyMetrics
 
 Google deprecated TelephonyMetrics class in Android 16 QPR2 as it was
 considered legacy code [1].
@@ -304,5 +304,5 @@ index 3552d70..c5c6ef4 100644
      .line 1177
      if-eqz p1, :cond_2
 -- 
-2.52.0
+2.54.0
 

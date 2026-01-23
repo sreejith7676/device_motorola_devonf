@@ -1,7 +1,7 @@
 From 458d4bd753dcd85842aaa0c53bb564312ed5f57a Mon Sep 17 00:00:00 2001
 From: electimon <electimon@gmail.com>
 Date: Mon, 3 Jun 2024 02:26:56 +0000
-Subject: [PATCH 3/8] ImsService: fix more issues
+Subject: [PATCH] ImsService: fix more issues
 
 Change-Id: Ifd9933a47df6c41b8d320a700ca91a5aff6db59b
 ---
@@ -177,5 +177,5 @@ index 48d8c7b..ca5416e 100644
      return-void
  
 -- 
-2.52.0
+2.54.0
 
