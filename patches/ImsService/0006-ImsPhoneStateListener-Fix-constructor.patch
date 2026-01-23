@@ -1,7 +1,7 @@
 From a89d733e0567af6bfe34799fc5fd8d835ed39d20 Mon Sep 17 00:00:00 2001
 From: Sarthak Roy <sarthakroy2002@gmail.com>
 Date: Wed, 26 Jun 2024 14:42:27 +0530
-Subject: [PATCH 6/8] ImsPhoneStateListener: Fix constructor
+Subject: [PATCH] ImsPhoneStateListener: Fix constructor
 
 Signed-off-by: Sarthak Roy <sarthakroy2002@gmail.com>
 Change-Id: I1f1dd4e683e7bd377a6bc93b965c7e12c3a98560
@@ -23,5 +23,5 @@ index 0f6ff44..3e84e1f 100644
      .line 43
      new-instance v0, Ljava/lang/StringBuffer;
 -- 
-2.52.0
+2.54.0
 

@@ -1,7 +1,7 @@
-From 8358143ca0056dc8a47f9a1fd679d54c9b2cdb65 Mon Sep 17 00:00:00 2001
+From d937ae52fe5304637813d590e35dd9e064677f0e Mon Sep 17 00:00:00 2001
 From: Sarthak Roy <sarthakroy2002@gmail.com>
 Date: Mon, 17 Jun 2024 22:03:29 +0530
-Subject: [PATCH 4/8] ImsService: Fix ImsKeeperReceiver receiver
+Subject: [PATCH] ImsService: Fix ImsKeeperReceiver receiver
 
 Signed-off-by: Sarthak Roy <sarthakroy2002@gmail.com>
 Change-Id: I3734111308d255513107c90a80129f956311266d
@@ -10,7 +10,7 @@ Change-Id: I3734111308d255513107c90a80129f956311266d
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/AndroidManifest.xml b/AndroidManifest.xml
-index 94a6a18..b5e3651 100644
+index 44b65ba..b5e3651 100644
 --- a/AndroidManifest.xml
 +++ b/AndroidManifest.xml
 @@ -73,7 +73,7 @@
@@ -23,5 +23,5 @@ index 94a6a18..b5e3651 100644
                  <action android:name="android.telephony.action.CARRIER_CONFIG_CHANGED"/>
              </intent-filter>
 -- 
-2.52.0
+2.54.0
 
