@@ -1,7 +1,7 @@
 From 7948e5e091f27d93cb81680568ba146f313238e3 Mon Sep 17 00:00:00 2001
 From: Erfan Abdi <erfangplus@gmail.com>
 Date: Mon, 17 Jun 2024 21:47:41 +0530
-Subject: [PATCH 2/8] ImsConfigImpl: Return 0 in getWfcMDN in any case
+Subject: [PATCH] ImsConfigImpl: Return 0 in getWfcMDN in any case
 
 Signed-off-by: betaxab <betaxab@gmail.com>
 Change-Id: Ie1d12eba911ec00e94f2210aa2b09efc50b7c9e4
@@ -37,5 +37,5 @@ index b4b3acf..3fa2461 100644
  .end method
  
 -- 
-2.52.0
+2.54.0
 
