@@ -1,0 +1,9 @@
+android_app_import {
+    name: "com.chiller3.bcr",
+    apk: "BCR.apk",
+    certificate: "platform",
+    privileged: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}

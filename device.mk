@@ -74,9 +74,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     DolbyManager \
-    MtkInCallService
+    MtkInCallService \
+    com.chiller3.bcr
 
 PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.chiller3.bcr.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.chiller3.bcr.xml \
+    $(DEVICE_PATH)/configs/sysconfig/config-com.chiller3.bcr.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/config-com.chiller3.bcr.xml \
     $(DEVICE_PATH)/configs/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
     $(DEVICE_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(DEVICE_PATH)/configs/audio/audio_em.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_em.xml \
