@@ -1361,17 +1361,14 @@ system_ext/priv-app/MtkGbaService/MtkGbaService.apk
 # IMS (Vendor)
 vendor/bin/lbs_hidl_service
 vendor/bin/rcs_volte_stack
-vendor/bin/volte_clientapi_ua
 vendor/bin/volte_rcs_ua
 vendor/etc/init/lbs_hidl_service.rc
-vendor/etc/init/volte_clientapi_ua.rc
 vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/libmmagent.so
 vendor/lib64/libmtkshifter_vendor.so
 vendor/lib64/libmtksysutils.so
-vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
 vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
