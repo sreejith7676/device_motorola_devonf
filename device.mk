@@ -73,9 +73,9 @@ PRODUCT_PACKAGES += \
     audioclient-types-aidl-cpp.vendor \
 
 PRODUCT_PACKAGES += \
+    DolbyManager \
     MtkInCallService \
-    com.chiller3.bcr \
-    LunarisDolby
+    com.chiller3.bcr
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.chiller3.bcr.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.chiller3.bcr.xml \
