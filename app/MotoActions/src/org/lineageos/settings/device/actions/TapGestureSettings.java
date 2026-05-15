@@ -35,8 +35,9 @@ import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreferenceCompat;
 
-import com.android.internal.clover.hardware.LineageHardwareManager; // Need FWB support
-import com.android.internal.clover.hardware.TouchscreenGesture; // Need FWB support
+import lineageos.hardware.LineageHardwareManager;
+import lineageos.hardware.TouchscreenGesture;
+import lineageos.providers.LineageSettings;
 import org.lineageos.settings.device.Constants;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import com.android.settingslib.widget.SettingsBasePreferenceFragment;
@@ -92,14 +93,14 @@ public class TapGestureSettings extends CollapsingToolbarBaseActivity
             final LineageHardwareManager manager = LineageHardwareManager.getInstance(getContext());
             mTapGestures = manager.getTouchscreenGestures();
             SwitchPreferenceCompat getstureHapticsSwitch = findPreference(KEY_TAP_GESTURE_HAPTIC);
-            boolean enabled = Settings.System.getInt(getContext().getContentResolver(),
-                    KEY_TAP_GESTURE_HAPTIC, 1) == 1;
+            boolean enabled = LineageSettings.System.getInt(getContext().getContentResolver(),
+                    LineageSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) == 1;
             getstureHapticsSwitch.setChecked(enabled);
             getstureHapticsSwitch.setOnPreferenceChangeListener(
                     (preference, newValue) -> {
                         boolean checked = (Boolean) newValue;
-                        Settings.System.putInt(getContext().getContentResolver(),
-                                KEY_TAP_GESTURE_HAPTIC, checked ? 1 : 0);
+                        LineageSettings.System.putInt(getContext().getContentResolver(),
+                                LineageSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, checked ? 1 : 0);
                         return true;
                     });
             final int[] actions = getDefaultGestureActions(getContext(), mTapGestures);

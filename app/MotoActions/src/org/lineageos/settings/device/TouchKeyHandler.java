@@ -49,6 +49,7 @@ import android.util.SparseIntArray;
 import android.view.KeyEvent;
 
 import com.android.internal.os.DeviceKeyHandler;
+import lineageos.providers.LineageSettings;
 import org.lineageos.settings.device.Constants;
 
 import java.util.List;
@@ -60,6 +61,8 @@ public class TouchKeyHandler implements DeviceKeyHandler {
     private static final String GESTURE_WAKEUP_REASON = "singletap-gesture-wakeup";
     private static final String PULSE_ACTION = "com.android.systemui.doze.pulse";
     private static final int GESTURE_REQUEST = 0;
+
+    private static final int EVENT_PROCESS_WAKELOCK_DURATION = 500;
 
     private final Context mContext;
     private final AudioManager mAudioManager;
@@ -241,7 +244,7 @@ public class TouchKeyHandler implements DeviceKeyHandler {
     }
 
     private void launchCamera() {
-        final Intent intent = new Intent(android.content.Intent.ACTION_SCREEN_CAMERA_GESTURE);
+        final Intent intent = new Intent(lineageos.content.Intent.ACTION_SCREEN_CAMERA_GESTURE);
         mContext.sendBroadcastAsUser(intent, UserHandle.CURRENT,
                 Manifest.permission.STATUS_BAR_SERVICE);
         doHapticFeedback();
@@ -365,8 +368,8 @@ public class TouchKeyHandler implements DeviceKeyHandler {
         }
 
         if (mAudioManager.getRingerMode() != AudioManager.RINGER_MODE_SILENT) {
-            final boolean enabled = Settings.System.getInt(mContext.getContentResolver(),
-                    Settings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) != 0;
+            final boolean enabled = LineageSettings.System.getInt(mContext.getContentResolver(),
+                    LineageSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) != 0;
             if (enabled) {
                 mVibrator.vibrate(VibrationEffect.get(VibrationEffect.EFFECT_HEAVY_CLICK));
             }
