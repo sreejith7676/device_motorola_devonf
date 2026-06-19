@@ -108,6 +108,13 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/mt6855/libmnl-mtk.so': blob_fixup()
         .add_needed('libcutils.so'),
     (
+        'vendor/lib/libcodec2_mtk_vdec.so',
+        'vendor/lib64/libcodec2_mtk_vdec.so',
+        'vendor/lib/libcodec2_mtk_venc.so',
+        'vendor/lib64/libcodec2_mtk_venc.so'
+    ): blob_fixup()
+        .replace_needed('libformatter.so', 'libformatter-v34.so'),
+    (
         'vendor/lib64/libdlbdsservice.so',
         'vendor/lib64/libcodec2_soft_ddpdec.so',
         'vendor/lib64/soundfx/libswdap.so',
