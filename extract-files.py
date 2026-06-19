@@ -60,6 +60,11 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/mnld': blob_fixup()
         .add_needed('android.hardware.sensors@1.0-convert-shared.so')
         .replace_needed('libmnl.so', 'libmnl-mtk.so'),
+        
+    ('vendor/lib/libcodec2_mtk_venc.so', 'vendor/lib64/libcodec2_mtk_venc.so',
+     'vendor/lib/libcodec2_mtk_vdec.so', 'vendor/lib64/libcodec2_mtk_vdec.so',
+     'vendor/lib/libcodec2_vpp_rs_plugin.so', 'vendor/lib64/libcodec2_vpp_rs_plugin.so'): blob_fixup()
+        .replace_needed('libformatter.so', 'libformatter-v34.so'),
     
     'vendor/lib64/hw/mt6855/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
         .add_needed('android.hardware.sensors@1.0-convert-shared.so')

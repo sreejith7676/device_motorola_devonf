@@ -1472,7 +1472,7 @@ vendor/lib/libcodec2_mtk_vdec.so
 vendor/lib/libcodec2_mtk_venc.so
 vendor/lib/libcodec2_vpp_qt_plugin.so
 vendor/lib/libcodec2_vpp_rs_plugin.so
-vendor/lib/libformatter.so
+vendor/lib/libformatter.so:vendor/lib/libformatter-v34.so;FIX_SONAME
 vendor/lib/libh264dec_customize.so
 vendor/lib/libh264dec_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib/libh264dec_sd.ca7.so;DISABLE_CHECKELF
@@ -1508,7 +1508,7 @@ vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
-vendor/lib64/libformatter.so
+vendor/lib64/libformatter.so:vendor/lib64/libformatter-v34.so;FIX_SONAME
 vendor/lib64/libhdrvideo.so
 vendor/lib64/libhevce_sb.ca7.android.so;DISABLE_CHECKELF
 vendor/lib64/libicd_decoder.so
@@ -1809,7 +1809,7 @@ vendor/lib/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib/vendor.mediatek.hardware.mms@1.6.so
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
 vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so
-vendor/lib64/mt6855/libmnl.so|vendor/lib64/mt6855/libmnl-mtk.so;FIX_SONAME;SYMLINK=vendor/lib64/libmnl-mtk.so
+vendor/lib64/mt6855/libmnl.so:vendor/lib64/mt6855/libmnl-mtk.so;FIX_SONAME;SYMLINK=vendor/lib64/libmnl-mtk.so
 vendor/lib64/libMtkAinrEnh.so
 vendor/lib64/libadropbox.so
 vendor/lib64/libcapctrl.so
