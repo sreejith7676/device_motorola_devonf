@@ -53,8 +53,14 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.security.keymint-V1-ndk_platform.so', 'android.hardware.security.keymint-V1-ndk.so')
         .replace_needed('android.hardware.security.sharedsecret-V1-ndk_platform.so', 'android.hardware.security.sharedsecret-V1-ndk.so')
         .replace_needed('android.hardware.security.secureclock-V1-ndk_platform.so', 'android.hardware.security.secureclock-V1-ndk.so'),
-    ('vendor/bin/mnld', 'vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so', 'vendor/lib64/mt6855/libcam.utils.sensorprovider.so'): blob_fixup()
+    
+    ('vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so', 'vendor/lib64/mt6855/libcam.utils.sensorprovider.so'): blob_fixup()
         .add_needed('android.hardware.sensors@1.0-convert-shared.so'),
+    
+    'vendor/bin/mnld': blob_fixup()
+        .add_needed('android.hardware.sensors@1.0-convert-shared.so')
+        .replace_needed('libmnl.so', 'libmnl-mtk.so'),
+    
     'vendor/lib64/hw/mt6855/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
         .add_needed('android.hardware.sensors@1.0-convert-shared.so')
         .replace_needed('libutils.so', 'libutils-v32.so')
@@ -72,8 +78,9 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/lib64/mt6855/lib3a.sensors.flicker.so', 'vendor/lib64/mt6855/lib3a.sensors.color.so', 
      'vendor/lib64/mt6855/libaaa_ltm.so', 'vendor/lib64/lib3a.ae.pipe.so'): blob_fixup()
         .add_needed('liblog.so'),
-    'vendor/lib64/mt6855/libmnl.so': blob_fixup()
+    'vendor/lib64/mt6855/libmnl-mtk.so': blob_fixup()
         .add_needed('libcutils.so'),
+    
     ('vendor/lib64/libdlbdsservice.so', 'vendor/lib64/libcodec2_soft_ddpdec.so',
      'vendor/lib64/soundfx/libswdap.so','vendor/lib64/soundfx/libdlbvol.so',
      'vendor/lib64/libcodec2_soft_ac4dec.so','vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service'): blob_fixup()
