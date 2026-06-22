@@ -6,4 +6,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/clover_devonf.mk
+    $(LOCAL_DIR)/lumine_devonf.mk
