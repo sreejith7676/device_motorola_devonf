@@ -49,6 +49,11 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/priv-app/MtkGbaService/MtkGbaService.apk': blob_fixup()
         .apktool_patch('MtkGba-patches'),
     (
+        'system_ext/lib/libarmnn_ndk.mtk.so',
+        'system_ext/lib64/libarmnn_ndk.mtk.so'
+    ): blob_fixup()
+        .add_needed('liblog.so'),
+    (
         'system_ext/etc/init/init.vtservice.rc',
         'vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc'
     ): blob_fixup()
