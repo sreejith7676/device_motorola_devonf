@@ -78,7 +78,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so',
         'vendor/lib64/mt6855/libcam.utils.sensorprovider.so'
     ): blob_fixup()
-        .add_needed('android.hardware.sensors@1.0-convert-shared.so'),
+        .add_needed('android.hardware.sensors@1.0-convert-shared.so')
+        .replace_needed('libmnl.so', 'libmnl-mtk.so'),
     'vendor/lib64/hw/mt6855/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
         .add_needed('android.hardware.sensors@1.0-convert-shared.so')
         .replace_needed('libutils.so', 'libutils-v32.so')
@@ -104,7 +105,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/lib3a.ae.pipe.so'
     ): blob_fixup()
         .add_needed('liblog.so'),
-    'vendor/lib64/mt6855/libmnl.so': blob_fixup()
+    'vendor/lib64/mt6855/libmnl-mtk.so': blob_fixup()
         .add_needed('libcutils.so'),
     (
         'vendor/lib64/libdlbdsservice.so',
