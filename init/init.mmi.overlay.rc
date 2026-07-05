@@ -13,6 +13,9 @@ on post-fs-data
     # config fingerprint
     mkdir /data/vendor/.fps 0770 system vendor_fingerp
     mkdir /mnt/vendor/persist/fps 0770 system system
+    mkdir /data/vendor/egis 0770 system vendor_fingerp
+    mkdir /data/vendor/egis/cqa 0770 system vendor_fingerp
+    mkdir /mnt/vendor/persist/egis 0770 system vendor_fingerp
 
 on late-init
     #moto algo params
