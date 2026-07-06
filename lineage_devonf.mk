@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/devonf/device.mk)
 
 # Inherit some common clover stuff.
-$(call inherit-product, vendor/clover/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_NAME := clover_devonf
@@ -21,8 +21,17 @@ PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g73 5G 
 
-CLOVER_MAINTAINER := Sreejith
+TARGET_SUPPORTS_NOW_PLAYING := true
+# MistOS Flags
+MISTOS_MAINTAINER := user@linux
 TARGET_ENABLE_BLUR := true
+MIST_BUILD_TYPE := OFFICIAL
+WITH_GMS := true
+
+# Lawnchair (Pixel Launcher by default)
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
